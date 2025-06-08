@@ -1,0 +1,153 @@
+/* Reset dan Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', 'Times New Roman', Times, sans-serif;
+  }
+  
+  body {
+    background-color: whitesmoke;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    width: 100%;
+    height: 80px;
+    background-color: #787EE0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+  
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fefefe;
+    cursor: pointer;
+    transition: color 0.5s ease;
+  }
+  
+  .logo:hover {
+    color: #000;
+  }
+  
+  /* Navigasi */
+  .nav-bar ul {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-bar ul li a:hover {
+    color: #110111;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #d9d9d9;
+    gap: 20px;
+  }
+  
+  .hero-text {
+    flex: 1 1 60%;
+    background-color: #bcbcbc;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  
+  .hero-image {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-box {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #888;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  /* Tentang Kami */
+  .tentangkami {
+    background-color: #6a6a6a;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .tentangkami h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tentangkami h5 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .tentangkami p {
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  
+  .tentangkami strong {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header {
+      padding: 0 1rem;
+    }
+  
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-text,
+    .hero-image {
+      flex: 1 1 100%;
+      width: 100%;
+    }
+  
+    .image-box {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
